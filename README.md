@@ -33,6 +33,9 @@ within the 15 years to 17 years age group.  Given the population of people in Po
 of 393 cannot  be considered to be a representative sample of the population.  Keeping in mind the likelihood of bias because of sample size, I think
 this dataset will be an interesting one to work with.
 
+Cortez and Silva studied students on two subjects, Portugese and Maths.  I selected the csv for Maths because I thought it would be more relatable
+for me to choose a universal school subject.
+
 Cortez and Silva were mining data to predict test scores.  They examined 33 variables, I will examine only four.  They were trying to find causal
 predictive relationships between their variables and test scores.  In Portugal students are graded on a 0-20 system in exams where 16-20 is equivalent to
 an A, 14-15 is equivalent to a B, 12-13 is equivalent to a C, 10-11 is equivalent to a D, 0-9 is an E(fail).
@@ -68,3 +71,8 @@ shows clearly that students who missed 20+ days of school were mainly represente
 This data trying to show a correlation between students ambitions to attend 3rd Level and their G3 maths grades is not successful.
 Because this is a secondary school most students attending would intend to attend third level.  It seems that in the Portugese educational system it is normal to leave
 at 15 if you are not planning 3rd level.  Therefore it is safe to assume that those who go to secondary want to go to third level even if their grades do not make that a likely outcome.
+
+I then created two further plots for each variable.  The sources which helped me construct my plots are listed above.  I plotted a normal distribution and a histogram for each
+variable; Mothers' education, Fathers' education, absences and G3, the final score each of the 359 recieved in maths in the year of the study.  
+
+Having run the complete file I realise that I have used the same code for the real dataset and the simulated dataset to perform some statistical analyses so my results are the same.  I will try to modify the code to have the simulated data resemble the other not match it.
