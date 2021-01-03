@@ -90,4 +90,28 @@ https://www.tutorialspoint.com/numpy/numpy_statistical_functions.html This site 
 
 https://github.com/runawayhorse001/statspy/blob/master/statspy/basics.py This was the most useful source I found and I have been down many disappointing alleyways! It gave me a defined function that I could apply to my real world data to recreate datasets which had the same number of samples, the same mean and standard deviation. A simulated dataset which shares these in common with a real world dataset is representative of the real world dataset.
 
-To replicate similar simulated data to the original dataset I knew I had to find some way of including mean and standard deviation.  I eventually found a rnorm function by Wenqiang Feng on the above url.  This allowed me to use the parameters of my original datasets to create four simulated datasets for mother's education, father's education, absences and final grade score.  The datasets for mother's education, father's education and final grade score were reasonably similar to the real world data.  Absences was very difficult to recreate, I don't think I managed to do it properly.  Because the possible number of days absent was between 1 and 75 the standard deviation was very high.  When I used rnorm many of the answers were negative, as it is not possible to be minus days absent from schools I tried the following on the data.  I squared every element of the list and then got its square room, this got rid of negative numbers.  When I plotted this data on a histogram it clearly doesn't replicate the original data and I am unable to figure out where to go next.
+https://www.youtube.com/watch?v=xlD8FIM5biA from a website called OSPY.
+This site helped me to save my images correctly and import them into my notebook.
+
+To replicate similar simulated data to the original dataset I knew I had to find some way of including mean and standard deviation.  I eventually found a rnorm function by Wenqiang Feng on the above url.  This allowed me to use the parameters of my original datasets to create four simulated datasets for mother's education, father's education, absences and final grade score.  The datasets for mother's education, father's education and final grade score were reasonably similar to the real world data.  Absences was very difficult to recreate, I don't think I managed to do it properly.  Perhaps because the possible number of days absent was between 1 and 75 the standard deviation was very high.  When I used rnorm many of the answers were negative, as it is not possible to be minus days absent from school I tried the following on the data.  I squared every element of the list and then got its square root, this got rid of negative numbers.  When I plotted this data on a histogram it clearly doesn't replicate the original data and I am unable to figure out where to go next.
+
+When the four simulated datasets were ready I created a histogram for each using Matplotlib.  I then used Image from IPython to copy the images of the real datasets into a folder called img and then displayed them next to each simulated dataset for comparison.  
+
+Results
+
+1. I sourced a suitable dataset of student attributes across a variety of variables.
+2. I imported the dataset into this jupyter notebook and isolated 359 samples across
+    seven variables, I eventually narrowed this down to four variables.
+3. I analysed the data using crosstabulation and various plots.  I finally made histogram plots
+    of each of four variables.
+4. The final task was to create simulated data which shared characteristics with the real world
+    data.  I used the function rnorm so I could base the simulated data on the real data.
+5. I made histogram plots to illustrate the simulated datasets.  I then used Image to show the real
+    world plots beside the simulated data plots.
+  
+
+Conclusion
+
+It is clear that the simulated data doesn't resemble the real world data as much as I would expect, 
+especially the Absences dataset.  I am not entirely happy with the outcome but I have certainly 
+learned a lot more, particularly in the area of research.
